@@ -7,7 +7,7 @@ dependencies:
   - python=3.6
   # required
   - geopandas
-  - pygeos
+  - pygeos=0.7.1
   - cython
   - pyrobuf
   - python-rapidjson
