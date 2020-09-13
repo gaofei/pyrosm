@@ -63,7 +63,7 @@ cdef convert_to_arrays_and_drop_empty(data):
     # Convert to arrays
     arrays = {}
     for key, value_list in data.items():
-        # Parse geometry separately for handling multi-geoms correctly
+        # Parse geometry separately so that multi-geoms are handled correctly
         if key == "geometry":
             arrays[key] = GeoSeries(value_list).values
             continue
